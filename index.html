@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements in Python</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>conditional statements</h1>
+
+    <h3>In Python, **conditional statements** allow you to execute certain blocks of code based on whether a condition is true or false. These statements help control the flow of your program. The most commonly used conditional statements are `if`, `elif`, and `else`.
+</h3>
+<div class="div">
+<h2>if statement:</h2>
+
+<h4>The `if` statement is used to test a condition. If the condition is true, the code block inside the `if` statement will be executed.
+</h4>
+<li>Syntax:</li>
+<p>
+if condition: <br>
+    # Code block to execute if the condition is True <br>
+</p>
+
+<p>
+x = 10 <br>
+if x > 5: <br>
+    print("x is greater than 5") <br> <br>
+Output: <br>
+x is greater than 5 <br>
+</p>
+
+<h2> else statement:</h2>
+<h4>The `else` statement follows the `if` statement and runs if the condition in the `if` is false.
+</h4>
+<li>Syntax:</li>
+<p>
+if condition: <br>
+    # Code block to execute if the condition is True <br>
+else: <br>
+    # Code block to execute if the condition is False <br>
+</p>
+
+<p>
+x = 3 <br>
+if x > 5: <br>
+    print("x is greater than 5") <br>
+else: <br>
+    print("x is not greater than 5") <br> <br>
+Output: <br>
+x is not greater than 5
+</p>
+
+<h2>elif statement:</h2>
+<h4>The `elif` (short for "else if") statement allows you to check multiple conditions. It follows an `if` statement and executes only if the `if` condition is false, but the `elif` condition is true. You can have multiple `elif` statements in a chain.
+</h4>
+<li>Syntax:</li>
+<p>
+if condition1: <br>
+    # Code block to execute if condition1 is True <br>
+elif condition2: <br>
+    # Code block to execute if condition2 is True <br>
+else: <br>
+    # Code block to execute if all previous conditions are False
+</p>
+
+<p>
+x = 10 <br>
+if x < 5: <br>
+    print("x is less than 5") <br>
+elif x == 10: <br>
+    print("x is equal to 10") <br>
+else: <br>
+    print("x is greater than 5 but not 10") <br> <br>
+Output:
+x is equal to 10
+</p>
+
+<h2>Nested if statements:</h2>
+<h4>You can also have `if` statements inside other `if` statements. This is known as a **nested if**.
+</h4>
+<p>
+x = 15 <br>
+if x > 10: <br>
+    if x < 20: <br>
+        print("x is between 10 and 20") <br>
+    else: <br>
+        print("x is greater than or equal to 20") <br>
+else: <br>
+    print("x is 10 or less") <br> <br>
+Output: <br>
+x is between 10 and 20
+</p>
+
+<h2> Conditional Expressions (Ternary Operator):</h2>
+<h4>In Python, you can use a conditional expression to evaluate a condition in a single line. This is also called a **ternary operator**.
+</h4>
+<li> Syntax:</li>
+<p>
+value_if_true if condition else value_if_false
+</p>
+
+<p>
+x = 7 <br>
+result = "Positive" if x > 0 else "Negative" <br>
+print(result) <br> <br>
+Output: <br>
+Positive
+</p>
+
+<h2>Summary of Conditional Statements:</h2>
+<li>`if`: Tests a condition and executes a block of code if the condition is true.</li>
+<li>`elif`: Checks another condition if the previous `if` (or `elif`) condition is false.</li>
+<li> `else`: Executes a block of code if none of the conditions are true.</li>
+<li> You can nest `if` statements inside one another.</li>
+<li> Python also has a compact conditional expression using the ternary operator.</li>
+</div>
+</body>
+</html>
