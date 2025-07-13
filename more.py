@@ -18,7 +18,6 @@ elif num < 0:
 else:
     print("Zero")
 
-
 #### 3. **Largest of Two Numbers**  
 
 a = int(input("Enter first number: "))
